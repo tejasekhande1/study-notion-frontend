@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CTAButtonComponent } from './ctabutton.component';
+import { TimelineSectionComponent } from './timeline-section.component';
 
-describe('CTAButtonComponent', () => {
-  let component: CTAButtonComponent;
-  let fixture: ComponentFixture<CTAButtonComponent>;
+describe('TimelineSectionComponent', () => {
+  let component: TimelineSectionComponent;
+  let fixture: ComponentFixture<TimelineSectionComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CTAButtonComponent]
+      imports: [TimelineSectionComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(CTAButtonComponent);
+    fixture = TestBed.createComponent(TimelineSectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
