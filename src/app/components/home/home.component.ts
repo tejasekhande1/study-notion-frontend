@@ -4,11 +4,12 @@ import { HighlighttextComponent } from './highlighttext/highlighttext.component'
 import { trigger, transition, animate, keyframes, style } from '@angular/animations';
 import { LearningLanguageSectionComponent } from './learning-language-section/learning-language-section.component';
 import { TimelineSectionComponent } from './timeline-section/timeline-section.component';
+import { InstructorSectionComponent } from './instructor-section/instructor-section.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [MatIconModule, HighlighttextComponent, TimelineSectionComponent, LearningLanguageSectionComponent],
+  imports: [MatIconModule, HighlighttextComponent, TimelineSectionComponent, LearningLanguageSectionComponent, InstructorSectionComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
