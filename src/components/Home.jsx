@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import HighlightText from "./HighlightText";
+import CTAButton from "./CTAButton.jsx";
 const Home = () => {
   return (
     <div>
@@ -30,6 +31,15 @@ const Home = () => {
             including hands-on projects, quizzes, and personalized feedback from
             instructors.
           </p>
+        </div>
+
+        <div className="flex flex-row justify-center gap-5 mt-8">
+          <CTAButton active={true} linkto={"/signup"}>
+            Learn More
+          </CTAButton>
+          <CTAButton active={false} linkto={"/login"}>
+            Book a Demo
+          </CTAButton>
         </div>
       </div>
 
