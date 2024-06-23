@@ -34,33 +34,34 @@ const CodeBlocks = ({
         </div>
       </div>
 
-      <div className="w-[50%] flex flex-row p-[32px] gap-[2px]">
-        {/* BG-gradient */}
-        <div className="text-center flex flex-col w-[10%] text-richblack-400 font-inter font-bold">
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
-          <p>5</p>
-          <p>6</p>
-          <p>7</p>
-          <p>8</p>
-          <p>9</p>
-          <p>10</p>
-          <p>11</p>
-        </div>
-        <div
-          className={`w-[90%] flex-col gap-2 font-bold font-mono ${codeColor} lg:w-[500px]`}
-        >
-          <TypeAnimation
-            sequence={[codeBlock, 2000, ""]}
-            repeat={Infinity}
-            omitDeletionAnimation={false}
-            style={{
-              whiiteSpace: "pre-line",
-              display: "block",
-            }}
-          ></TypeAnimation>
+      <div className="w-[50%] flex flex-row p-[32px] border border-richblack-100 border-opacity-[22%] bg-code-block-gradient"> 
+        <div className="p-[8px] flex">
+          <div className="text-center flex flex-col w-[10%] text-richblack-400 font-inter font-bold">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+            <p>6</p>
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+          </div>
+          <div
+            className={`w-[100%] flex-col font-bold font-mono ${codeColor} lg:w-[500px]`}
+          >
+            <TypeAnimation
+              sequence={[codeBlock, 2000, ""]}
+              repeat={Infinity}
+              omitDeletionAnimation={false}
+              style={{
+                whiteSpace: "pre-line",
+                display: "block",
+              }}
+            ></TypeAnimation>
+          </div>
         </div>
       </div>
     </div>

@@ -6,3 +6,17 @@
 html,body{
     overflow-x: hidden;
 }
+
+.overlay-gradient {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure the overlay is behind the content */
+    pointer-events: none; /* Allow clicks to go through to underlying content */
+    background: radial-gradient(ellipse at center, rgba(138, 43, 226, 0.2) -6.46%, rgba(255, 165, 0, 0.2) 59.04%, rgba(248, 248, 255, 0.2) 124.53%);
+    opacity: 0.2; /* Set the opacity */
+    transform: rotate(-0deg); /* Adjust rotation angle */
+  }
